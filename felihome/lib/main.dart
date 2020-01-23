@@ -7,6 +7,7 @@ class Felihome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: Text("Felihome"),
         backgroundColor: Colors.green,
         leading: IconButton(icon: Icon(Icons.menu),onPressed: (){print("Clicked");},),
@@ -30,12 +31,32 @@ class Felihome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Text(
+                "'अतिथि देवो भव: '" ,
+                style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+              )
+
+            ],
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                '"Extend Your Arms in Welcome to the Nature."',
+                style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
                 
               ),
-
+            ],
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Image(
+                image: AssetImage("visitnepal.png"),
+              ),
             ],
           )
         ],
+        
       ),
     
     );
