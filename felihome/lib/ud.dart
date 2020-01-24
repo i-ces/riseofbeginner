@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+ 
+// import 'package:felihome/horizontal.dart';
 void main()=>runApp(Upperdhangadi(),);
 
 class Upperdhangadi extends StatefulWidget {
@@ -47,6 +49,17 @@ class _UpperdhangadiState extends State<Upperdhangadi> {
 "It has the historical importace of Nepal as it was headquater of chitwan in past. You would be amazed by seeing the of ancient fort at height."
 "The stone of fort are praised for surviving th greastest attack of east india company.",
           ),
+          MaterialButton(
+          child: Text("More Detail"),
+          onPressed: () {
+            Route route = MaterialPageRoute(builder: (context)=>Detail());
+            Navigator.push(context, route);
+          },
+          color: Colors.green,
+        ),
+        //  Padding(padding: const EdgeInsets.all(8.0),
+        //  child: Text("Upcoming Event",style: TextStyle(fontWeight: FontWeight.bold),),),
+        //  HorizontalList(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
