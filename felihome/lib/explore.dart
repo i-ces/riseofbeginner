@@ -1,4 +1,4 @@
-// import 'package:felihome/ud.dart';
+import 'package:felihome/ud.dart';
 import 'package:flutter/material.dart';
 // import "package:secondpage/HomePage.dart";
 
@@ -35,8 +35,8 @@ class _MyAppState extends State<MyApp> {
             ),
              padding: const EdgeInsets.all(20.0),
             onPressed: () {
-            // Route route = MaterialPageRoute(builder: (context)=>UpperDhangadi());
-            // Navigator.push(context, route);
+            Route route = MaterialPageRoute(builder: (context)=>Upperdhangadi());
+            Navigator.push(context, route);
             },
             )
           ),
